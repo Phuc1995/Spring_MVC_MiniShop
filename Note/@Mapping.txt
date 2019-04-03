@@ -1,0 +1,16 @@
+﻿- @ResponseBody: get value from return
+- <constructor-arg name="" type="" ref="">: tham số phương thức khởi tạo
+- super: kich hoat ham da duoc khoi tao khi ke thua
+- for(String value : nhanVien.getList()) {
+	System.out.println(value);
+	}
+-for(Entry<String, Object> entry : nhanVien.getMap().entrySet())
+- <property />: đại diện cho biến
+- <bean>: đại diện cho class
+- Inner bean: khai bao class trong class == depends-on
+- scope = "singleton" "prototyte: tao cai moi hoan toan != singleton"
+- Autowiring: autowire tự dộng dò biến trong class bean vs các bean id, "byname" ang "byType"
+- Resources: use <bean> and create a class CustomClassLoader
+-@RequestParam(name = "id", required = false) int id, ModelMap modelMap) 
+-@MatrixVariable: <mvc:annotation-driven enable-matrix-variables="true"></mvc:annotation-driven>
+-@ModelAttribute: su dung khi truyen vao 1 Object

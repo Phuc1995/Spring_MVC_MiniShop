@@ -1,0 +1,11 @@
+﻿-Vòng đời của JSP: 
+	+ Initialization (jspInit): khởi tạo xử lý code
+	+ Requeust processing ( _jspService): nhận vào các request POST or Get từ người dùng
+	+ Destroy ( jspDestroy()): hủy transaction
+-${}: code goi bien truc tiep tu controller, chỉ xử lý trên 1 dòng
+-	<%
+		String ten = request.getAttribute("user").toString();
+	%>
+-CSS:
+	+ css-trick.com
+	+ justify

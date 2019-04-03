@@ -1,0 +1,32 @@
+﻿- Cho  phép xây dựng theo hướng đối tượng(POJO)
+- Thực thi các transaction vs database không cần gọi Transaction API
+- Sử dụng các phương thức của Java để tạo các HTTP mà không cần phải khai báo Servlet
+- Gửi và xử lý một mesage mà không cần gọi JMS API
+- Tổ chức và quản lý các phương thức cục bộ của Java mà không cần JMS API
+- Các modeles sẽ được gom thành: Core Container, Data Access/Integration, Web, AOP(Aspect Oriented Programming), 
+Instrumentation, Massaging and Test:
+	+ Data Access/Integration: JBDC, JMS, ORM, Transaction tuong tac vs CSDL
+	+ Web: WebSocket, Servlet, Web, Porttlet
+	+ Core Containner: Beans, Core, Context, SpEl
+
+-Core Containner:
+	+ spring-core va spring-beans: cung cấp các thành phần cơ bản của Framwork bao gồm các tính năng của IoC và
+Dependence Injection. BeanFactory là một mô hình phức tạp nó loại bỏ các chương trình độc lập và cho phép chúng ta
+tách riêng cấu hình
+	+ Module Context (spring-context) là một cơ sở vững chắc dc xây dựng từ 2 modules Core và Bean. 
+ApplicationContext interface là tiêu điểm chính của Context Module
+	+ spring-context-support: cung cấp các bộ thư viện thứ ba cho spring context caching
+	+ spring-aop module: cung cấp AOP là các mệnh lệnh liên quan đến lập trìn hướng đối tuọng cho phép chúng ta
+khai báo, lấy ví dụ, phương pháp chặn, các điểm đóng để làm rõ ràng khi tách code
+
+-Data Access/Integration:
+	+ spring-jdbc: cung cấp các lớp trừu tượng JDEC lớp này sẽ giúp chúng ta loại bỏ những đoạn code dùng để kết nối JDBC.
+	+ spring-tx: support và quản lý các khai báo transaction cho các class implement các interface chỉ định cho tất cả POJOS
+	+ spring-orm: chúng ta su dung mapping farmework, hibernate
+	+ spring-oxm: biến các xml thành Object
+
+-Web:
+	+ spring-webmvc: RESR Web Service
+
+-Vòng đời của <bean> gồm: init-method và destroy-method
+	
