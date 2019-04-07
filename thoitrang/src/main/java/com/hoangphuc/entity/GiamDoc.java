@@ -4,7 +4,6 @@ public class GiamDoc extends NhanVien {
 	String chucVu;
 	
 	public GiamDoc(String chucvu, String tennhanvien, int tuoi ) {
-		super(tennhanvien, tuoi);
 		this.chucVu = chucvu;
 	}
 
